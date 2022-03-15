@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yixuan Liu">
+    <meta name="keywords" content="HTML, JavaScript">
+    <meta name="description" content="Profile Page">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <h1>My Account</h1>
+    <div id="prolink">
+      <a href="main.html"><input type="button" value="Back To Main Page" id="mainBtn"></a>
+    </div>
+    <div class="main">
+      <div class="box1">
+      <table align="center">
+      <tr>
+      <td>
+        Display Name:
+        </td>
+        <td>
+        <input type="text" placeholder="your display name" id="Displayname" />
+        </td>
+        <td>
+        <span id="Newname">Yixuan Liu</span>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <span class="hint" id="Namealert"></span>
+      </div>
+      <div class="box1">
+      <table align="center">
+      <tr>
+      <td>
+        Email Address:
+        </td>
+        <td>
+        <input type="text" placeholder="xxx@xxx.xxx" id="Email" /></td>
+        <td>
+        <span id="NewEmail">yl244@rice.edu</span>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <span class="hint" id="Emailalert"></span>
+      </div>
+      <div class="box1">
+      <table align="center">
+      <tr>
+      <td>
+        Phone Number:
+        </td>
+        <td>
+        <input type="text" placeholder="xxx-xxx-xxxx" id="Phone" /></td>
+        <td>
+        <span id="NewPhone">123-123-1234</span>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <span class="hint" id="Phonealert"></span>
+      </div>
+      <div class="box1">
+      <table align="center">
+      <tr>
+      <td>
+        Zipcode:
+        </td>
+        <td>
+        <input type="text" placeholder="xxxxx" id="Zipcode" /></td>
+        <td>
+        <span id="NewZipcode">77005</span>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <span class="hint" id="Zipcodealert"></span>
+      </div>
+      <div class="box1">
+      <table align="center">
+      <tr>
+      <td>
+        Password:
+        </td>
+        <td>
+        <input type="text" id="Password1" />
+        </td>
+        <td>
+        <span id="NewPassword1">******</span>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <span class="hint" id="Password1alert"></span>
+      </div>
+      <div class="box1">
+      <table align="center">
+      <tr>
+      <td>
+        Password Confirmation:
+        </td>
+        <td>
+        <input type="text" id="PasswordConfirmation" />
+        </td>
+        <td>
+         <span id="NewPasswordConfirmation">******</span>
+         </td>
+        </tr>
+        </table>
+        <br />
+        <span class="hint" id="PasswordConfirmationalert"></span>
+      </div>
+      <input type="submit" value="Submit" id="submitBtn" onclick="validateFill()" />
+    </div>
+  </body>
+  <script type="text/javascript" src="profile.js"></script>
+
+</html>
